@@ -19,8 +19,7 @@
 |name|string|null: false|
 
 Association
-- has_many:users
-- has many:messages
+- has_many users through messages
 
 
 ## groups_usersテーブル
@@ -44,6 +43,7 @@ Association
 
 ### Association
 - belongs_to: user
+- belongs_to: group
 
 
 This README would normally document whatever steps are necessary to get the
